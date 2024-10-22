@@ -1,4 +1,5 @@
 site_name: Docs
+site_url: https://green-sprout.github.io/docs/
 
 theme:
   name: material
