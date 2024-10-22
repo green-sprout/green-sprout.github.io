@@ -1,8 +1,21 @@
 site_name: Docs
-site_url: https://green-sprout.github.io/docs/
 
+# Plugins and extensions
+markdown_extensions:
+  - md_in_html
+  - pymdownx.highlight:
+      use_pygments: true
+  - pymdownx.superfences
+
+# Theme and look
 theme:
   name: material
+  icon:
+    logo: material/sprout
+  favicon: https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/material/templates/.icons/material/sprout.svg
+  features:
+    - navigation.sections
+    - navigation.expand
   palette:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
@@ -19,13 +32,22 @@ theme:
         icon: material/weather-night
         name: Switch to system preference
       primary: green
+copyright: Copyright &copy; 2016 - 2024 Green Sprout
 
-# Syntax highlighting
-markdown_extensions:
-  - pymdownx.highlight:
-      use_pygments: true
-  - pymdownx.superfences
+# Footer
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      name: Link to our GitHub
+      link: https://github.com/green-sprout
+    - icon: material/post
+      name: Our Blog
+      link: https://github.com/green-sprout/blog/discussions
 
-
+# Navigation
 nav:
-- Home: index.md
+- Home: docs/general/index.md
+- SRS: docs/general/srs.md
+- Sprintmeetings:
+  - Sprint 2: docs/sprintmeetings/sprint2.md
