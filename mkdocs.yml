@@ -47,7 +47,7 @@ extra:
 
 # Navigation
 nav:
-- Home: docs/general/index.md
+- Home: index.md
 - SRS: docs/general/srs.md
 - Sprintmeetings:
   - Sprint 2: docs/sprintmeetings/sprint2.md
