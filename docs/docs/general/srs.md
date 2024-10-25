@@ -116,7 +116,7 @@ Sequence Diagram:
 GUI Mockup:
 ![GUI Mockup of filter map](../../assets/srs/filtermap-gui.png)
 **pre-conditions:** The user opened the website and is in the initial map view and selected filters.
-**post-conditions:** The map displays only the restaurants that match the selected filters.
+**post-conditions:** The map displays only the restaurants that match the selected filters.  
 **Story points:** 13
 
 **2. View restaurant**
@@ -126,7 +126,7 @@ Sequence Diagram:
 GUI Mockup:
 ![GUI Mockup of select restaurant](../../assets/srs/selectrestaurant-gui.png)
 **pre-conditions:** Clicked on restaurant marker on the map.  
-**post-conditions:** Side bar with restaurant information and reviews opens.
+**post-conditions:** Side bar with restaurant information and reviews opens.  
 **Story points:** 13
 
 **3. Write review**  
@@ -137,7 +137,7 @@ GUI Mockup:
 ![GUI Mockup of write review](../../assets/srs/writereview-gui.png)
 **pre-conditions:** The user is logged in and on the restaurant's profile page and clicked on "write review” button.  
 **post-conditions:** Pop-up window to write review opens.  
-**Story points:** -
+**Story points:** 21
 
 **4. My lists(soon)**  
 With my list reviewers can find all of their lists in one place.  
@@ -149,7 +149,7 @@ GUI Mockup:
 a list.  
 **post-conditions:** The user can view and manage all their saved lists in one place, with options to 
 add, edit, or delete items from their lists.  
-**Story points:** 21
+**Story points:** 
 
 **5. Create lists(soon)**  
 With this functionality reviewers get the chance to save restaurants in a list. To remember their favorite restaurants or keep track of restaurants they want to visit.
@@ -157,8 +157,8 @@ Sequence Diagram:
 *coming soon*  
 GUI Mockup:  
 *coming soon*  
-**pre-conditions:** The user is logged in and has access to the restaurant profiles.
-**post-conditions:** The user can create a new list and add restaurants to it, with the option to name the list.
+**pre-conditions:** The user is logged in and has access to the restaurant profiles.  
+**post-conditions:** The user can create a new list and add restaurants to it, with the option to name the list.  
 **Story points:** -
 
 **6. Share list(soon)**  
@@ -286,7 +286,7 @@ The development will follow the common clean code standards and naming conventio
 For any further information you can contact the Green Sprout Team or check our [Green Sprout Blog](https://github.com/green-sprout/blog/discussions)  
 The Team Members are:  
 - Paula Kropfinger  
-- Valentin Wöhrlse  
+- Valentin Wöhrle  
 - Jonas Schlösser  
 - Samuel Brekeller  
 - Safae Kartite
