@@ -54,7 +54,7 @@ This document is organized into sections detailing the purpose, scope, and flow 
 
 The following describes the flow of events in the "Filter Map" use case. The sequence diagram is shown below for visual reference:
 
-
+https://github.com/green-sprout/docs/blob/main/docs/assets/general/Sequenzdiagram.PNG
 
 **Flow Steps:**
 - **User Action:** The user selects filter keys on the front-end interface to define specific types of points of interest to display on the map.
