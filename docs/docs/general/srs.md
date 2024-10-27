@@ -108,7 +108,7 @@ and add the ability to filter also for non-restaurant businesses (e.g., bars, sh
 ### 3.1 Functionality
 This section will explain the different use cases as seen in the Use Case diagram and their 
 functionality  
-**1. Filter map**  
+**1. Configure map filter**  
 This functionality gives the user the possibility to filter for specific keys like cuisines 
 and diets.
 Sequence Diagram:
@@ -119,8 +119,8 @@ GUI Mockup:
 **post-conditions:** The map displays only the restaurants that match the selected filters.  
 **Story points:** 13
 
-**2. View restaurant**
-View restaurants shows the user information about the selected restaurant including name, cuisine, pictures, overall rating and existing reviews.
+**2. View point of interest**
+View point of interest shows the user information about the selected point of interest (e.g restaurant) including name, cuisine, pictures, overall rating and existing reviews.
 Sequence Diagram:
 ![Sequence Diagram to view restaurant](../../assets/srs/selectrestaurant-sd.svg)
 GUI Mockup:
@@ -139,19 +139,7 @@ GUI Mockup:
 **post-conditions:** Pop-up window to write review opens.  
 **Story points:** 21
 
-**4. My lists(soon)**  
-With my list reviewers can find all of their lists in one place.  
-Sequence Diagram:  
-*coming soon*  
-GUI Mockup:  
-*coming soon*  
-**pre-conditions:** The user is logged in and has previously saved at least one restaurant or review to 
-a list.  
-**post-conditions:** The user can view and manage all their saved lists in one place, with options to 
-add, edit, or delete items from their lists.  
-**Story points:** 
-
-**5. Create lists(soon)**  
+**4. Create lists (soon)**  
 With this functionality reviewers get the chance to save restaurants in a list. To remember their favorite restaurants or keep track of restaurants they want to visit.
 Sequence Diagram:  
 *coming soon*  
@@ -161,7 +149,7 @@ GUI Mockup:
 **post-conditions:** The user can create a new list and add restaurants to it, with the option to name the list.  
 **Story points:** -
 
-**6. Share list(soon)**  
+**5. Share list (soon)**  
 This functionality provides reviewers the option of sharing their list with other users.  
 Sequence Diagram:  
 *coming soon*  
@@ -171,7 +159,7 @@ GUI Mockup:
 **post-conditions:** The user can share the list with other users via a link or other sharing options.  
 **Story points:** -
 
-**6. Edit list(soon)**  
+**6. Customize list (soon)**  
 Reviewers also need the possibility to remove restaurants from their list, change the name of the list or delete it if it's not used anymore.  
 Sequence Diagram:  
 *coming soon*  
