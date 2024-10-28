@@ -53,7 +53,7 @@ The following describes the flow of events in the "View Restaurant" use case. Th
 
 ## 3. Derived Requirements
 
-1. **Amount Data:** The Backend should only return a certain amount of reviews for this action. To reload more reviews the user just scrolls down the loaded reviews and more will be loaded.
+1. **Amount of Data:** The Backend should only return a certain amount of reviews for this action. To reload more reviews the user just scrolls down the loaded reviews and more will be loaded.
 2. **Error Handling:** If the database query or the OpenStreetMap request fails, the frontend still recieves an answer with the successfully recieved data. If both fail the backend responds with an error message.  
 3. **Scalability:** The back end must efficiently handle multiple requests to the OpenStreetMap API and database queries without performance degradation.  
 4. **Data Accuracy:** The data recieved by the frontend should be displayed accurately without formatting errors.
