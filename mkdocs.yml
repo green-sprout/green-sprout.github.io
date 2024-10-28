@@ -48,7 +48,8 @@ extra:
 # Navigation
 nav:
 - Home: index.md
-- UCRS Filter Map: docs/general/UCRS_FilterMap.md
 - SRS: docs/general/srs.md
+- UCRS Filter Map: docs/general/UCRS_FilterMap.md
+- UCRS View Restaurant: docs/general/UCRS_ViewRestaurant.md
 - Sprintmeetings:
   - Sprint 2: docs/sprintmeetings/sprint2.md
