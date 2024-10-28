@@ -115,16 +115,20 @@ Sequence Diagram:
 ![Sequence Diagram to filter map](../../assets/srs/filtermap-sd.svg)
 GUI Mockup:
 ![GUI Mockup of filter map](../../assets/srs/filtermap-gui.png)
+Activity Diagram:  
+![Activity Diagram of filter map](../../assets/srs/filtermap-ad.png)  
 **pre-conditions:** The user opened the website and is in the initial map view and selected filters.
 **post-conditions:** The map displays only the restaurants that match the selected filters.  
 **Story points:** 13
 
-**2. View point of interest**
+**2. View point of interest**  
 View point of interest shows the user information about the selected point of interest (e.g restaurant) including name, cuisine, pictures, overall rating and existing reviews.
 Sequence Diagram:
 ![Sequence Diagram to view restaurant](../../assets/srs/selectrestaurant-sd.svg)
 GUI Mockup:
 ![GUI Mockup of select restaurant](../../assets/srs/selectrestaurant-gui.png)
+Activity Diagram:  
+![Activity Diagram of view review](../../assets/srs/viewreview-ad.png)  
 **pre-conditions:** Clicked on restaurant marker on the map.  
 **post-conditions:** Side bar with restaurant information and reviews opens.  
 **Story points:** 13
@@ -135,6 +139,8 @@ Sequence Diagram:
 ![Sequence Diagram to write review](../../assets/srs/writereview-sd.svg)
 GUI Mockup:
 ![GUI Mockup of write review](../../assets/srs/writereview-gui.png)
+Activity Diagram:  
+![Activity Diagram of write review](../../assets/srs/writereview-ad.png)  
 **pre-conditions:** The user is logged in and on the restaurant's profile page and clicked on "write review” button.  
 **post-conditions:** Pop-up window to write review opens.  
 **Story points:** 21
