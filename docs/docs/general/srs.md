@@ -78,10 +78,13 @@ They can also create lists with selected restaurants of their choice. The applic
 provide users with a rich visual interface and interactive map, helping users make informed 
 dining decisions based on location, ratings, and reviews.
 
-### b. Use Case Diagram
+### b. Class Diagram
+![Class Diagram](../../assets/srs/classdiagram.png)
+
+### c. Use Case Diagram
 ![Use Case Diagram](../../assets/srs/usecasediagram.svg)
 
-### c. Tech-Stack
+### d. Tech-Stack
 | Scope | Technology |
 | --- | --- |
 | Frontend | JavaScript Framework (Vue.js) |
@@ -92,14 +95,14 @@ dining decisions based on location, ratings, and reviews.
 | Deployment | GitHub Actions |
 | Testing | diverse |
 
-### d. User characteristics
+### e. User characteristics
 **Reviewers:** Registered users who can write reviews, upload images, ratings to restaurants 
 and create restaurant lists. They are primarily food enthusiasts who want to share their 
 experiences.
 **General Users:** Unregistered users or casual viewers who want to browse restaurants, view 
 reviews, and explore the map without creating an account.
 
-### e. Requirement subsets:
+### f. Requirement subsets:
 **Core Requirements:** Features necessary for the minimum viable product (MVP) include the map, restaurant and user profiles, user registration, review submission, and filtering.  
 **Additional Features:** Future expansions could include the ability to create restaurant lists 
 and add the ability to filter also for non-restaurant businesses (e.g., bars, shops).
