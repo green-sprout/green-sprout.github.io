@@ -270,13 +270,24 @@ This application will be runnable on desktop browsers (Chrome, Edge, Safari, Fir
 #### 3.9.3 Communications Interfaces
 The server and browser will communicate using https protocol.
 
-### 3.10 Licensing Requirements
+### 3.10 Architecturally Significant Requirements
+
+|Quality attribute|Refinement|Quality attribute scenarios|Business value|Technical risk|
+|---|---|---|---|---|
+|Aesthetics|Design|The design is centered around meeting user needs with a cohesive, green-themed design system. Visual elements are consistently styled to ensure a unified look and feel across the interface. Interactive elements, such as buttons, provide immediate feedback for example color change, giving users a clear confirmation of their actions and enhancing the overall user experience.|H|L|
+|Conformance|Ease of Deployment|Deploying a new version of a component should be made simple by providing sufficient resources to the deployer. The new component must be backward compatible to ensure stable conversion to newer program versions.|M|L|
+|Performance|Response Time|The application, especially in terms of communication with the backend and API, should maintain a response time under 2 seconds. Ideally, it should stay within the 1-second range to ensure a seamless user experience.|H|M|
+||Page Speed|A user, no matter what device, should see a visually appealing and fast page. A google page speed insight analysis of at least 90 points is considered to be good|H|L|
+|Serviceability|Modularity|Backend, Frontend & Database should be seperated at any given time. Sections should be kept structured to allow adding further Feature-Modules at a later point.|M|M|
+|Security|User-Data-Encryption|By hashing the password of a user immediately after recieving it in the backend, and only storing this hash guarantees the security of the password. The authentication of all user requests and their integrity is verified by using industry-standard JWT tokens.|H|H|
+
+### 3.11 Licensing Requirements
 n/a
 
-### 3.11 Legal, Copyright, and Other Notices
+### 3.12 Legal, Copyright, and Other Notices
 We do not take responsibility for any incorrect data or errors in the application.
 
-### 3.12 Applicable Standards
+### 3.13 Applicable Standards
 The development will follow the common clean code standards and naming conventions (see section [3.5.1 Coding standards](#351-coding-standards)).
 
 ## 4. Supporting Information
