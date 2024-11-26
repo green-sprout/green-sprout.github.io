@@ -102,7 +102,7 @@ experiences.
 **General Users:** Unregistered users or casual viewers who want to browse restaurants, view 
 reviews, and explore the map without creating an account.
 
-### f. Requirement subsets:
+### f. Requirement subsets
 **Core Requirements:** Features necessary for the minimum viable product (MVP) include the map, restaurant and user profiles, user registration, review submission, and filtering.  
 **Additional Features:** Future expansions could include the ability to create restaurant lists 
 and add the ability to filter also for non-restaurant businesses (e.g., bars, shops).
@@ -280,6 +280,8 @@ The server and browser will communicate using https protocol.
 ||Page Speed|A user, no matter what device, should see a visually appealing and fast page. A google page speed insight analysis of at least 90 points is considered to be good|H|L|
 |Serviceability|Modularity|Backend, Frontend & Database should be seperated at any given time. Sections should be kept structured to allow adding further Feature-Modules at a later point.|M|M|
 |Security|User-Data-Encryption|By hashing the password of a user immediately after recieving it in the backend, and only storing this hash guarantees the security of the password. The authentication of all user requests and their integrity is verified by using industry-standard JWT tokens.|H|H|
+
+
 
 ### 3.11 Licensing Requirements
 n/a
