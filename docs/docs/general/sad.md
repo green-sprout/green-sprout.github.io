@@ -12,11 +12,11 @@ This Software Architecture Document provides an architectural overview of the Gr
 
 ## 1.3 Definitions, Acronyms and Abbreviations
 
-See the Glossary: [if it exists / ref here]
+See the Glossary: ```[if it exists / ref here]```
 
 ## 1.4 References
 
-Applicable references are: [add referenced documents here]
+Applicable references are: ```[add referenced documents here]```
 
 ## 1.5 Overview
 
