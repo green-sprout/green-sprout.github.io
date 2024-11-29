@@ -50,3 +50,8 @@ The modular architecture separates backend, frontend and database, which increas
 
 This architecture ensures a reliable system with a high level of user-friendliness and flexibility.
 
+# 6. Process View
+![Sequence Diagram components](../../assets/sad/full-sd.png)
+The sequence diagram shows how a user selects filter criteria via the front end, whereupon the backend retrieves the appropriate map information from the Open Street Map API.
+The user can select a restaurant whose details and ratings are provided by the backend.
+They can also write a review, which is saved in the database via the backend.
