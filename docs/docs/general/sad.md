@@ -12,18 +12,28 @@ This Software Architecture Document provides an architectural overview of the Gr
 
 ## 1.3 Definitions, Acronyms and Abbreviations
 
-See the Glossary: ```[if it exists / ref here]```
+The following Definitions, Acronyms and Abbreviations are used.:
+
+- 'API' Application Programming Interface
+  
+- 'CRUD' Short for "Create, Read, Update and Delete"
+  
+- 'JWT' Jason Web Token
 
 ## 1.4 References
 
-Applicable references are: ```[add referenced documents here]```
+Applicable references are:
 
-## 1.5 Overview
-
-```
-[This subsection describes what the rest of the Software Architecture Document contains and explains how the Software Architecture Document is organized.]
-```
-
+- All of the material contained in our Github Repositories
+  
+  - https://github.com/green-sprout/backend
+    
+  - https://github.com/green-sprout/frontend
+    
+  - https://github.com/green-sprout/green-sprout
+    
+  - https://github.com/green-sprout/docs
+  
 # 2. Architectural Representation
 
 This document presents the architecture as a series of views:
@@ -39,8 +49,7 @@ This document presents the architecture as a series of views:
 - Implementation View
   
 
-The purpose of these views is to relay the structure and function of the Software in a concise manner. 
-```[Explanation on how the views are represented] ```
+The purpose of these views is to relay the structure and function of the Software in a concise manner using xml-based Diagrams whenever possible.
 
 # 3. Architectural Goals and Constraints
 
