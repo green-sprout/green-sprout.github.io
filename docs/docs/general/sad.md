@@ -43,14 +43,8 @@ Applicable references are:
 ## 2. Architectural Representation
 
 This document presents the architecture as a series of views:
-
-- Use-Case View
-  
-- Logical View
-  
+ 
 - Process View
-  
-- Deployment View
   
 - Implementation View
   
