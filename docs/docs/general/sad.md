@@ -14,11 +14,15 @@ This Software Architecture Document provides an architectural overview of the Gr
 
 The following Definitions, Acronyms and Abbreviations are used.:
 
-- 'API' Application Programming Interface
+- API  Application Programming Interface
   
-- 'CRUD' Short for "Create, Read, Update and Delete"
+- CRUD  Short for "Create, Read, Update and Delete"
   
-- 'JWT' Jason Web Token
+- JWT  Jason Web Token
+
+- OSM  Open Street Map
+
+- ORM  Object-Relational Mapping 
 
 ### 1.4 References
 
