@@ -22,7 +22,9 @@ The following Definitions, Acronyms and Abbreviations are used.:
 
 - OSM  Open Street Map
 
-- ORM  Object-Relational Mapping 
+- ORM  Object-Relational Mapping
+
+- UML  Unified Modeling Language
 
 ### 1.4 References
 
@@ -53,7 +55,7 @@ This document presents the architecture as a series of views:
 - Implementation View
   
 
-The purpose of these views is to relay the structure and function of the Software in a concise manner using xml-based Diagrams whenever possible.
+The purpose of these views is to relay the structure and function of the Software in a concise manner using UML-Diagrams whenever possible.
 
 ## 3. Architectural Goals and Constraints
 
