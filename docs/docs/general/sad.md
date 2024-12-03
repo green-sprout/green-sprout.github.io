@@ -69,75 +69,79 @@ They can also write a review, which is saved in the database via the backend.
 ## 8. Implementation View
 ### Komponentendiagramm der Webanwendung
 ![Komponentendiagramm](../../assets/sad/KomponentDiagram.jpeg)
-Das Komponentendiagramm zeigt die Architektur der Webanwendung und illustriert die wichtigsten Softwarekomponenten sowie deren Interaktionen. Die Anwendung besteht aus einer **Frontend-** und einer **Backend-Schicht**, die miteinander sowie mit externen APIs und einer Datenbank kommunizieren.
+### Component Diagram Overview  
 
-### Komponenten und deren Verantwortlichkeiten
+The component diagram illustrates the architecture of the web application and highlights the main software components and their interactions. The application consists of a frontend and a backend layer that communicate with each other, as well as with external APIs and a database.  
 
-#### Frontend
-Das Frontend umfasst folgende Komponenten:
+### Components and Their Responsibilities  
 
-##### Map View
-- Zeigt Restaurants und Kartendaten basierend auf den vom Nutzer ausgewählten Filtern an.
-- Stellt Anfragen an das Backend und die OSM-Integration, um Kartendaten zu aktualisieren.
+### Frontend  
+The frontend includes the following components:  
 
-##### Filters
-- Ermöglicht Nutzern, Suchkriterien wie Küche, Diät oder Bewertung auszuwählen.
-- Sendet die ausgewählten Filterkriterien an das Backend sowie direkt an die OSM-Integration, um gefilterte Daten abzurufen.
+#### **Map View**  
+- Displays restaurants and map data based on filters selected by the user.  
+- Sends requests to the backend and the OSM integration to update map data.  
 
-##### User Management
-- Verarbeitet Benutzerregistrierung, Login und Sitzungsverwaltung.
-- Kommuniziert mit dem **Authentication Service** im Backend.
+#### **Filters**  
+- Allows users to select search criteria such as cuisine, dietary preferences, or ratings.  
+- Sends the selected filter criteria to the backend and directly to the OSM integration to retrieve filtered data.  
 
-##### Review Management
-- Ermöglicht registrierten Nutzern, Rezensionen zu schreiben und bestehende Rezensionen anzuzeigen.
-- Übermittelt neue oder aktualisierte Rezensionen an das Backend zur Speicherung.
+#### **User Management**  
+- Handles user registration, login, and session management.  
+- Communicates with the Authentication Service in the backend.  
 
-#### Backend
-Das Backend umfasst folgende Komponenten:
+#### **Review Management**  
+- Enables registered users to write reviews and view existing ones.  
+- Submits new or updated reviews to the backend for storage.  
 
-##### Authentication Service
-- Verarbeitet die Authentifizierung von Benutzern (Login, Registrierung).
-- Übermittelt und überprüft Benutzerinformationen in der **User Management**-Komponente.
+### Backend  
+The backend includes the following components:  
 
-##### User Management
-- Verwaltet Benutzerdaten.
-- Speichert die Benutzerdaten in der Datenbank über die **Database Layer**-Komponente.
+#### **Authentication Service**  
+- Handles user authentication (login, registration).  
+- Sends and verifies user information in the User Management component.  
 
-##### OSM Integration
-- Kommuniziert mit der OpenStreetMap API, um Kartendaten und Restaurantobjekte abzurufen.
-- Bearbeitet Filterkriterien aus dem Frontend und Backend, um gefilterte Daten bereitzustellen.
-- Speichert Restaurantdaten in der lokalen Datenbank, wenn notwendig.
+#### **User Management**  
+- Manages user data.  
+- Stores user data in the database via the Database Layer component.  
 
-##### Review Management
-- Verarbeitet Rezensionen und Bewertungen, die vom Frontend empfangen werden.
-- Speichert Rezensionen in der Datenbank über die **Database Layer**-Komponente.
+#### **OSM Integration**  
+- Communicates with the OpenStreetMap API to fetch map data and restaurant objects.  
+- Processes filter criteria from the frontend and backend to provide filtered data.  
+- Stores restaurant data in the local database when necessary.  
 
-##### Database Layer
-- Dient als Schnittstelle zur **PostgreSQL-Datenbank**.
-- Führt CRUD-Operationen (Erstellen, Lesen, Aktualisieren, Löschen) für Benutzerdaten, Rezensionen und gegebenenfalls Restaurantdaten aus.
+#### **Review Management**  
+- Handles reviews and ratings received from the frontend.  
+- Stores reviews in the database via the Database Layer component.  
 
-#### Externe Komponenten
-- **PostgreSQL-Datenbank**:  
-  Speichert Benutzerinformationen, Rezensionen und ggf. Restaurantdaten, die von der OSM API stammen.
-- **OpenStreetMap API**:  
-  Stellt Kartendaten und Informationen zu Restaurants bereit. Unterstützt gefilterte Anfragen basierend auf den vom Nutzer gewählten Kriterien.
+#### **Database Layer**  
+- Serves as the interface to the PostgreSQL database.  
+- Performs CRUD operations (Create, Read, Update, Delete) for user data, reviews, and restaurant data as needed.  
 
-### Hauptinteraktionen
+### External Components  
 
-#### Frontend zu Backend
-- Nutzerinteraktionen (z. B. Filtern, Rezensionen schreiben) werden vom Frontend an das Backend übermittelt, das die Anfragen verarbeitet.
-- Authentifizierungsanfragen und Sitzungsmanagement werden an den **Authentication Service** weitergeleitet.
+#### **PostgreSQL Database**  
+- Stores user information, reviews, and, if applicable, restaurant data fetched from the OSM API.  
 
-#### Backend zu OSM API
-- Das Backend nutzt die **OSM Integration**, um Kartendaten und Restaurantinformationen von der OpenStreetMap API abzurufen.
-- Gefilterte Anfragen werden basierend auf den vom Nutzer gesetzten Kriterien weitergeleitet.
+#### **OpenStreetMap API**  
+- Provides map data and restaurant information.  
+- Supports filtered requests based on criteria selected by the user.  
 
-#### Backend zur Datenbank
-- Benutzerdaten, Rezensionen und Restaurantdaten werden in der **PostgreSQL-Datenbank** gespeichert und bei Bedarf abgerufen.
+### Key Interactions  
 
-#### Filters zu OSM Integration
-- Die **Filters**-Komponente im Frontend sendet ausgewählte Kriterien direkt an die **OSM Integration**, um eine gefilterte Ansicht der Karte zu erhalten.
+#### Frontend to Backend  
+- User interactions (e.g., filtering, writing reviews) are sent from the frontend to the backend for processing.  
+- Authentication requests and session management are handled by the Authentication Service.  
 
+#### Backend to OSM API  
+- The backend uses the OSM integration to fetch map data and restaurant information from the OpenStreetMap API.  
+- Filtered requests are forwarded based on the criteria set by the user.  
+
+#### Backend to Database  
+- User data, reviews, and restaurant data are stored in the PostgreSQL database and retrieved as needed.  
+
+#### Filters to OSM Integration  
+- The Filters component in the frontend sends selected criteria directly to the OSM integration to generate a filtered map view.  
 
 ## 11. Quality
 
