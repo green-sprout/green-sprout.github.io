@@ -39,7 +39,7 @@ This document is organized into sections detailing the purpose, scope, and flow 
 
 The following describes the flow of events in the "View Restaurant" use case. The sequence diagram is shown below for visual reference:
 
-![Sequence Diagram](../../assets/general/viewrestaurant-sd.png)
+![Sequence Diagram to view restaurant](../../assets/srs/selectrestaurant-sd.svg)
 
 **Flow Steps:**
 - **User Action:** The user clicks on a POI on the Map  
