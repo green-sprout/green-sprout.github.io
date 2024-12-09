@@ -1,0 +1,1782 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../..">
+      
+      
+        <link rel="next" href="../sad/">
+      
+      
+      <link rel="icon" href="https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/material/templates/.icons/material/sprout.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.48">
+    
+    
+      
+        <title>SRS - Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#srs-software-requirement-specification" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="Docs" class="md-header__button md-logo" aria-label="Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 22v-2s5-2 10-2 10 2 10 2v2zm9.3-12.9c-1.2-3.9-7.3-3-7.3-3s.2 7.8 5.9 6.6C9.5 9.8 8 9 8 9c2.8 0 3 3.4 3 3.4V17h2v-4.2s0-3.9 3-4.9c0 0-2 3-2 5 7 .7 7-8.9 7-8.9s-8.9-1-9.7 5.1"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              SRS
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="Docs" class="md-nav__button md-logo" aria-label="Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2 22v-2s5-2 10-2 10 2 10 2v2zm9.3-12.9c-1.2-3.9-7.3-3-7.3-3s.2 7.8 5.9 6.6C9.5 9.8 8 9 8 9c2.8 0 3 3.4 3 3.4V17h2v-4.2s0-3.9 3-4.9c0 0-2 3-2 5 7 .7 7-8.9 7-8.9s-8.9-1-9.7 5.1"/></svg>
+
+    </a>
+    Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    SRS
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    SRS
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      1 Introduction
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1 Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 Purpose
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 Scope
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-definitions-acronyms-and-abbreviations" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 Definitions, Acronyms and Abbreviations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4 References
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5 Overview
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-overall-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Overall Description
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Overall Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-product-perspective" class="md-nav__link">
+    <span class="md-ellipsis">
+      a. Product perspective
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-class-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      b. Class Diagram
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-use-case-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      c. Use Case Diagram
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-tech-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      d. Tech-Stack
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-user-characteristics" class="md-nav__link">
+    <span class="md-ellipsis">
+      e. User characteristics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f-requirement-subsets" class="md-nav__link">
+    <span class="md-ellipsis">
+      f. Requirement subsets
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-specific-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Specific Requirements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Specific Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-functionality" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Functionality
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-usability" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Usability
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 Usability">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#321-user-training-and-learning-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2.1 User Training and Learning Time
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#322-task-efficiency" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2.2 Task Efficiency
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#323-user-interface-ui-standards" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2.3 User Interface (UI) Standards
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#324-error-handling-and-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2.4 Error Handling and Feedback
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-usability" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 Usability
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.3 Usability">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#331-availability" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3.1 Availability
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#332-fault-tolerance" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3.2 Fault Tolerance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#333-data-integrity" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3.3 Data Integrity
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 Performance
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.4 Performance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#341-response-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4.1 Response Time
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#342-database-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4.2 Database Performance
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-supportability" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5 Supportability
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.5 Supportability">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#351-coding-standards" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5.1 Coding Standards
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#352-testing-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5.2 Testing Strategy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-design-constraints" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.6 Design Constraints
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-on-line-user-documentation-and-help-system-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.7 On-line User Documentation and Help System Requirements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.7 On-line User Documentation and Help System Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#38-purchased-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.8 Purchased Components
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#39-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.9 Interfaces
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.9 Interfaces">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#391-hardware-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.9.1 Hardware Interfaces
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#392-software-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.9.2 Software Interfaces
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#393-communications-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.9.3 Communications Interfaces
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#310-architecturally-significant-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.10 Architecturally Significant Requirements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#311-licensing-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.11 Licensing Requirements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#312-legal-copyright-and-other-notices" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.12 Legal, Copyright, and Other Notices
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#313-applicable-standards" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.13 Applicable Standards
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-supporting-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Supporting Information
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sad/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SAD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UCRS_FilterMap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UCRS Filter Map
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../UCRS_ViewRestaurant/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    UCRS View Restaurant
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Sprintmeetings
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Sprintmeetings
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sprintmeetings/sprint2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sprint 2
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      1 Introduction
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1 Introduction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-purpose" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 Purpose
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-scope" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 Scope
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-definitions-acronyms-and-abbreviations" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 Definitions, Acronyms and Abbreviations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4 References
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.5 Overview
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-overall-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Overall Description
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Overall Description">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-product-perspective" class="md-nav__link">
+    <span class="md-ellipsis">
+      a. Product perspective
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#b-class-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      b. Class Diagram
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#c-use-case-diagram" class="md-nav__link">
+    <span class="md-ellipsis">
+      c. Use Case Diagram
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#d-tech-stack" class="md-nav__link">
+    <span class="md-ellipsis">
+      d. Tech-Stack
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#e-user-characteristics" class="md-nav__link">
+    <span class="md-ellipsis">
+      e. User characteristics
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#f-requirement-subsets" class="md-nav__link">
+    <span class="md-ellipsis">
+      f. Requirement subsets
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-specific-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Specific Requirements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Specific Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-functionality" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 Functionality
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-usability" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 Usability
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 Usability">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#321-user-training-and-learning-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2.1 User Training and Learning Time
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#322-task-efficiency" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2.2 Task Efficiency
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#323-user-interface-ui-standards" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2.3 User Interface (UI) Standards
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#324-error-handling-and-feedback" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2.4 Error Handling and Feedback
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-usability" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3 Usability
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.3 Usability">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#331-availability" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3.1 Availability
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#332-fault-tolerance" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3.2 Fault Tolerance
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#333-data-integrity" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.3.3 Data Integrity
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4 Performance
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.4 Performance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#341-response-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4.1 Response Time
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#342-database-performance" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.4.2 Database Performance
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-supportability" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5 Supportability
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.5 Supportability">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#351-coding-standards" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5.1 Coding Standards
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#352-testing-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.5.2 Testing Strategy
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-design-constraints" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.6 Design Constraints
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-on-line-user-documentation-and-help-system-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.7 On-line User Documentation and Help System Requirements
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.7 On-line User Documentation and Help System Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#38-purchased-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.8 Purchased Components
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#39-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.9 Interfaces
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.9 Interfaces">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#391-hardware-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.9.1 Hardware Interfaces
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#392-software-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.9.2 Software Interfaces
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#393-communications-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.9.3 Communications Interfaces
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#310-architecturally-significant-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.10 Architecturally Significant Requirements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#311-licensing-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.11 Licensing Requirements
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#312-legal-copyright-and-other-notices" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.12 Legal, Copyright, and Other Notices
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#313-applicable-standards" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.13 Applicable Standards
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-supporting-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Supporting Information
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="srs-software-requirement-specification">SRS (<strong>S</strong>oftware <strong>R</strong>equirement <strong>S</strong>pecification)</h1>
+<h2 id="1-introduction">1 Introduction</h2>
+<h3 id="11-purpose">1.1 Purpose</h3>
+<p>This Software Requirement Specification (SRS) provides a comprehensive collection of 
+all specifications of the "Green Sprout" restaurant-finder application. It outlines the 
+purpose, scope, and key details of the project. The SRS describes both functional and non functional requirements necessary for the development and delivery of the application.</p>
+<h3 id="12-scope">1.2 Scope</h3>
+<p>This project will be a web-based application. 
+The main actors of this application can include restaurant owners, reviewers, or general 
+visitors. 
+The key features planned are:</p>
+<ul>
+<li>
+<p><strong>Visual Map:</strong> This map is the primary element of the user interface, displaying the 
+area (e.g., Karlsruhe) and a set of location markers representing the restaurants at 
+their respective locations.</p>
+</li>
+<li>
+<p><strong>Restaurant Profiles:</strong> Each restaurant has a detailed profile that initially includes its 
+name, type of cuisine, photos, overall rating, and existing reviews. </p>
+</li>
+<li>
+<p><strong>Registering as a Reviewer:</strong> Users can create an account with their first name, last 
+name, email address and a password of choice. This is necessary to gain the ability 
+to publish reviews of restaurants and create lists. </p>
+</li>
+<li>
+<p><strong>Creating a Restaurants List:</strong> Users can create lists with a title and a collection of 
+restaurants of their choice.</p>
+</li>
+<li>
+<p><strong>User (Reviewer) Profiles:</strong> Registered users have personal profiles featuring their 
+name, profile picture, and a history of all the reviews they’ve written on the 
+platform as well as their published restaurant lists.</p>
+</li>
+<li>
+<p><strong>Adding a new Review:</strong> Each restaurant on the map will have an "Add a Review" 
+option, allowing users to write a review, upload photos, and provide a star rating.</p>
+</li>
+<li>
+<p><strong>Filtering Restaurant Searches:</strong> Users will be able to filter restaurants based on 
+cuisine type and diet.</p>
+</li>
+</ul>
+<h3 id="13-definitions-acronyms-and-abbreviations">1.3 Definitions, Acronyms and Abbreviations</h3>
+<table>
+<thead>
+<tr>
+<th>Abbreviation</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SRS</td>
+<td>Software Requirement Specification</td>
+</tr>
+<tr>
+<td>MVP</td>
+<td>Minimum Viable Product</td>
+</tr>
+<tr>
+<td>n/a</td>
+<td>not applicable</td>
+</tr>
+</tbody>
+</table>
+<h3 id="14-references">1.4 References</h3>
+<table>
+<thead>
+<tr>
+<th>Title</th>
+<th>Date</th>
+<th>Publishing Organization</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/green-sprout/blog/discussions">Green Sprout Blog</a></td>
+<td></td>
+<td>Green Sprout Team</td>
+</tr>
+<tr>
+<td><a href="https://github.com/green-sprout">Green Sprout GitHub Organization</a></td>
+<td></td>
+<td>Green Sprout Team</td>
+</tr>
+</tbody>
+</table>
+<h3 id="15-overview">1.5 Overview</h3>
+<p>This Software Requirements Specification (SRS) document for the "Green Sprout" project 
+outlines all the requirements necessary for the development of the restaurant-finder application. 
+It serves as a comprehensive guideline for the design, development, and implementation of the 
+application.</p>
+<p>The SRS document is structured to cover both functional and non-functional requirements in 
+detail. The document is divided into several sections:</p>
+<p><strong>Section 1</strong> introduces the project, covering its purpose, scope, and relevant definitions. It also includes references to related documents and resources.</p>
+<p><strong>Section 2</strong> provides an overall description of the product, explaining its context, user 
+characteristics, product features, assumptions, and constraints.</p>
+<p><strong>Section 3</strong> presents the specific requirements, both functional (such as map filtering, restaurant profiles, user registration, and reviews) and non-functional (usability, reliability, and performance). This section details each feature with pre-conditions and post-conditions where 
+applicable, ensuring clear expectations for both developers and testers.</p>
+<p><strong>Section 4</strong> includes supporting information and especially contact information about the team.</p>
+<h2 id="2-overall-description">2. Overall Description</h2>
+<h3 id="a-product-perspective">a. Product perspective</h3>
+<p><em>Green Sprout</em> is a restaurant-finder web-based application. The product is intended to serve 
+as a comprehensive platform for finding, reviewing, and recommending restaurants within 
+a specific geographic area, such as Karlsruhe. The platform allows users to register as 
+reviewers, browse restaurants, and filter search results by cuisine type and diet preferences. 
+They can also create lists with selected restaurants of their choice. The application aims to 
+provide users with a rich visual interface and interactive map, helping users make informed 
+dining decisions based on location, ratings, and reviews.</p>
+<h3 id="b-class-diagram">b. Class Diagram</h3>
+<p><img alt="Class Diagram" src="../../../assets/srs/classdiagram.png" /></p>
+<h3 id="c-use-case-diagram">c. Use Case Diagram</h3>
+<p><img alt="Use Case Diagram" src="../../../assets/srs/usecasediagram.svg" /></p>
+<h3 id="d-tech-stack">d. Tech-Stack</h3>
+<table>
+<thead>
+<tr>
+<th>Scope</th>
+<th>Technology</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Frontend</td>
+<td>JavaScript Framework (Vue.js)</td>
+</tr>
+<tr>
+<td>Backend</td>
+<td>Java Framework (Springboot)</td>
+</tr>
+<tr>
+<td>Database</td>
+<td>PostgreSQL</td>
+</tr>
+<tr>
+<td>Project Management</td>
+<td>Jira</td>
+</tr>
+<tr>
+<td>IDE</td>
+<td>IntelliJ, VSCode</td>
+</tr>
+<tr>
+<td>Deployment</td>
+<td>GitHub Actions</td>
+</tr>
+<tr>
+<td>Testing</td>
+<td>diverse</td>
+</tr>
+</tbody>
+</table>
+<h3 id="e-user-characteristics">e. User characteristics</h3>
+<p><strong>Reviewers:</strong> Registered users who can write reviews, upload images, ratings to restaurants 
+and create restaurant lists. They are primarily food enthusiasts who want to share their 
+experiences.
+<strong>General Users:</strong> Unregistered users or casual viewers who want to browse restaurants, view 
+reviews, and explore the map without creating an account.</p>
+<h3 id="f-requirement-subsets">f. Requirement subsets</h3>
+<p><strong>Core Requirements:</strong> Features necessary for the minimum viable product (MVP) include the map, restaurant and user profiles, user registration, review submission, and filtering.<br />
+<strong>Additional Features:</strong> Future expansions could include the ability to create restaurant lists 
+and add the ability to filter also for non-restaurant businesses (e.g., bars, shops).</p>
+<h2 id="3-specific-requirements">3. Specific Requirements</h2>
+<h3 id="31-functionality">3.1 Functionality</h3>
+<p>This section will explain the different use cases as seen in the Use Case diagram and their 
+functionality<br />
+<strong>1. Configure map filter</strong><br />
+This functionality gives the user the possibility to filter for specific keys like cuisines 
+and diets.
+Sequence Diagram:
+<img alt="Sequence Diagram to filter map" src="../../../assets/srs/filtermap-sd.svg" />
+GUI Mockup:
+<img alt="GUI Mockup of filter map" src="../../../assets/srs/filtermap-gui.png" />
+Activity Diagram:<br />
+<img alt="Activity Diagram of filter map" src="../../../assets/srs/filtermap-ad.png" /><br />
+<strong>pre-conditions:</strong> The user opened the website and is in the initial map view and selected filters.
+<strong>post-conditions:</strong> The map displays only the restaurants that match the selected filters.<br />
+<strong>Story points:</strong> 13</p>
+<p><strong>2. View point of interest</strong><br />
+View point of interest shows the user information about the selected point of interest (e.g restaurant) including name, cuisine, pictures, overall rating and existing reviews.
+Sequence Diagram:
+<img alt="Sequence Diagram to view restaurant" src="../../../assets/srs/selectrestaurant-sd.svg" />
+GUI Mockup:
+<img alt="GUI Mockup of select restaurant" src="../../../assets/srs/selectrestaurant-gui.png" />
+Activity Diagram:<br />
+<img alt="Activity Diagram of view review" src="../../../assets/srs/viewreview-ad.png" /><br />
+<strong>pre-conditions:</strong> Clicked on restaurant marker on the map.<br />
+<strong>post-conditions:</strong> Side bar with restaurant information and reviews opens.<br />
+<strong>Story points:</strong> 13</p>
+<p><strong>3. Write review</strong><br />
+A reviewer has the possibility to write a review for the currently selected restaurant. The review includes a rating and optionally pictures as well a review text.<br />
+Sequence Diagram:
+<img alt="Sequence Diagram to write review" src="../../../assets/srs/writereview-sd.svg" />
+GUI Mockup:
+<img alt="GUI Mockup of write review" src="../../../assets/srs/writereview-gui.png" />
+Activity Diagram:<br />
+<img alt="Activity Diagram of write review" src="../../../assets/srs/writereview-ad.png" /><br />
+<strong>pre-conditions:</strong> The user is logged in and on the restaurant's profile page and clicked on "write review” button.<br />
+<strong>post-conditions:</strong> Pop-up window to write review opens.<br />
+<strong>Story points:</strong> 21</p>
+<p><strong>4. Create lists (soon)</strong><br />
+With this functionality reviewers get the chance to save restaurants in a list. To remember their favorite restaurants or keep track of restaurants they want to visit.
+Sequence Diagram:<br />
+<em>coming soon</em><br />
+GUI Mockup:<br />
+<em>coming soon</em><br />
+<strong>pre-conditions:</strong> The user is logged in and has access to the restaurant profiles.<br />
+<strong>post-conditions:</strong> The user can create a new list and add restaurants to it, with the option to name the list.<br />
+<strong>Story points:</strong> -</p>
+<p><strong>5. Share list (soon)</strong><br />
+This functionality provides reviewers the option of sharing their list with other users.<br />
+Sequence Diagram:<br />
+<em>coming soon</em><br />
+GUI Mockup:<br />
+<em>coming soon</em><br />
+<strong>pre-conditions:</strong> The user has created at least one list and is logged in.<br />
+<strong>post-conditions:</strong> The user can share the list with other users via a link or other sharing options.<br />
+<strong>Story points:</strong> -</p>
+<p><strong>6. Customize list (soon)</strong><br />
+Reviewers also need the possibility to remove restaurants from their list, change the name of the list or delete it if it's not used anymore.<br />
+Sequence Diagram:<br />
+<em>coming soon</em><br />
+GUI Mockup:<br />
+<em>coming soon</em><br />
+<strong>pre-conditions:</strong> The user has an existing list and is logged in.<br />
+<strong>post-conditions:</strong> The user can update the list by removing restaurants, changing the list name, or deleting the list entirely.<br />
+<strong>Story points:</strong> -</p>
+<h3 id="32-usability">3.2 Usability</h3>
+<h4 id="321-user-training-and-learning-time">3.2.1 User Training and Learning Time</h4>
+<p><strong>Normal Users (General Visitors and Unregistered Users):</strong> The application should be intuitive enough that a new user can browse restaurants, view details, and read reviews with minimal effort. No training should be required, and users should become proficient in basic tasks (e.g., navigating the map, searching restaurants) within a few minutes.<br />
+<strong>Power Users (Registered Reviewers):</strong> Reviewers who will frequently submit reviews, upload photos, and manage restaurant lists should become proficient in these more complex tasks after doing them once.</p>
+<h4 id="322-task-efficiency">3.2.2 Task Efficiency</h4>
+<p><strong>Restaurant Search and Filtering:</strong> Users should be able to filter restaurant searches by 
+cuisine type or diet within 5 clicks or taps. The results should update in under 3 seconds
+on average.<br />
+<strong>Review Submission:</strong> Registered users must be able to submit a new review with a star 
+rating and upload photos in under 3 minutes, assuming an average internet connection.</p>
+<h4 id="323-user-interface-ui-standards">3.2.3 User Interface (UI) Standards</h4>
+<p>The UI should adhere to modern usability standards for web applications, such as providing a consistent layout across all pages, and easy-to-read fonts.<br />
+Interactive elements (buttons, forms, filters) should be clearly distinguishable with appropriate spacing and color contrast.</p>
+<h4 id="324-error-handling-and-feedback">3.2.4 Error Handling and Feedback</h4>
+<p>Users must receive clear and concise feedback when an error occurs (e.g., invalid form 
+inputs, failed review submission).<br />
+The system should provide confirmations for critical actions such as submitting reviews 
+or creating new restaurant lists.</p>
+<h3 id="33-usability">3.3 Usability</h3>
+<h4 id="331-availability">3.3.1 Availability</h4>
+<p>The system must be available 97% of the time.<br />
+Scheduled maintenance windows should be communicated to users in advance.</p>
+<h4 id="332-fault-tolerance">3.3.2 Fault Tolerance</h4>
+<p>The system must be capable of handling unexpected failures in the database, server, or network without causing a complete system shutdown.</p>
+<h4 id="333-data-integrity">3.3.3 Data Integrity</h4>
+<p>The system must ensure that user reviews, restaurant profiles, and other critical data are stored safely, even in the event of hardware failure, power outages, or software crashes.<br />
+Transaction management and database operations must follow ACID (Atomicity, Consistency, Isolation, Durability) principles to guarantee data integrity.</p>
+<h3 id="34-performance">3.4 Performance</h3>
+<h4 id="341-response-time">3.4.1 Response Time</h4>
+<p>The system must provide a response time of less than 3 seconds for all major user actions under normal conditions, including:
+- Searching for restaurants
+- Viewing restaurant profiles
+- Submitting reviews and ratings
+In high load conditions, the response time should not exceed 5 seconds.<br />
+Actions involving media uploads (e.g., images of restaurants) should complete within 5 seconds for files under 5MB. For larger files, the system should notify users about expected upload time and provide feedback on progress.</p>
+<h4 id="342-database-performance">3.4.2 Database Performance</h4>
+<p>Queries to the database (e.g., fetching restaurant details, reviews, or user profiles) must return results within 2 seconds under normal load and no more than 5 seconds under peak load.<br />
+Bulk operations, such as batch importing of restaurant data, should complete within 15 minutes.</p>
+<h3 id="35-supportability">3.5 Supportability</h3>
+<h4 id="351-coding-standards">3.5.1 Coding Standards</h4>
+<p>The Green Sprout project will adhere to clean code principles and industry best practices, ensuring modular, maintainable, and scalable code.<br />
+All code will follow standard naming conventions, proper indentation, and include sufficient comments to enhance readability and ease future development.<br />
+Version control (Git) will be used to manage code changes, ensuring traceability and allowing for safe rollbacks when necessary.</p>
+<h4 id="352-testing-strategy">3.5.2 Testing Strategy</h4>
+<p>A comprehensive testing strategy will be implemented, including automated unit tests.<br />
+All features will undergo testing across different desktop devices and browsers to guarantee compatibility and performance.</p>
+<h3 id="36-design-constraints">3.6 Design Constraints</h3>
+<p><strong>Technology Stack:</strong> The application will be built using Vue.js for the frontend, Spring Boot with Java for the backend, and PostgreSQL as the database. These technologies define the framework and limit the design to what is supported by these tools.  </p>
+<p><strong>Responsiveness:</strong> The user interface must be designed to work seamlessly across various desktop devices, adhering to responsive design principles.  </p>
+<p><strong>Data Storage:</strong> The application will store user and restaurant data in a relational database (PostgreSQL), which constrains the design to a schema that ensures efficient querying and data integrity.  </p>
+<p><strong>Security:</strong> All design elements must consider security measures like encrypted  communication (HTTPS), authentication, and secure database access to protect user data and maintain privacy.</p>
+<h3 id="37-on-line-user-documentation-and-help-system-requirements">3.7 On-line User Documentation and Help System Requirements</h3>
+<p>The usage of the web application should be as intuitive as possible so it won't need any further documentation. If the user needs some help they should be able to contact the development team.</p>
+<h4 id="38-purchased-components">3.8 Purchased Components</h4>
+<p>We don't have any purchased components yet. If there will be purchased components in the future we will list them here.</p>
+<h3 id="39-interfaces">3.9 Interfaces</h3>
+<p>The user interfaces to be implemented are:</p>
+<ul>
+<li>Home Page – Displays a map with restaurant markers, search options, and featured restaurants.</li>
+<li>Restaurant Profile Page – Shows detailed information about a restaurant, including images, reviews, ratings, and location.</li>
+<li>User Profile Page – Displays user information, reviews they’ve written, favorite restaurants, and preferences.</li>
+<li>Login Page – Allows users to log into the platform.</li>
+<li>Register Page – Provides a registration form for new users to sign up.</li>
+<li>Review Submission Page – Allows users to submit reviews and ratings for restaurants, including uploading images.</li>
+<li>Create a List Page – Allows users to create a new list from a collection of chosen restaurants.</li>
+<li>View a List Page - Allows users to view own/ shared lists and its contents</li>
+</ul>
+<h4 id="391-hardware-interfaces">3.9.1 Hardware Interfaces</h4>
+<p>n/a</p>
+<h4 id="392-software-interfaces">3.9.2 Software Interfaces</h4>
+<p>This application will be runnable on desktop browsers (Chrome, Edge, Safari, Firefox, etc.).</p>
+<h4 id="393-communications-interfaces">3.9.3 Communications Interfaces</h4>
+<p>The server and browser will communicate using https protocol.</p>
+<h3 id="310-architecturally-significant-requirements">3.10 Architecturally Significant Requirements</h3>
+<table>
+<thead>
+<tr>
+<th>Quality attribute</th>
+<th>Refinement</th>
+<th>Quality attribute scenarios</th>
+<th>Business value</th>
+<th>Technical risk</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Aesthetics</td>
+<td>Design</td>
+<td>The design is centered around meeting user needs with a cohesive, green-themed design system. Visual elements are consistently styled to ensure a unified look and feel across the interface. Interactive elements, such as buttons, provide immediate feedback for example color change, giving users a clear confirmation of their actions and enhancing the overall user experience.</td>
+<td>H</td>
+<td>L</td>
+</tr>
+<tr>
+<td>Conformance</td>
+<td>Ease of Deployment</td>
+<td>Deploying a new version of a component should be made simple by providing sufficient resources to the deployer. The new component must be backward compatible to ensure stable conversion to newer program versions.</td>
+<td>M</td>
+<td>L</td>
+</tr>
+<tr>
+<td>Performance</td>
+<td>Response Time</td>
+<td>The application, especially in terms of communication with the backend and API, should maintain a response time under 2 seconds. Ideally, it should stay within the 1-second range to ensure a seamless user experience.</td>
+<td>H</td>
+<td>M</td>
+</tr>
+<tr>
+<td></td>
+<td>Page Speed</td>
+<td>A user, no matter what device, should see a visually appealing and fast page. A google page speed insight analysis of at least 90 points is considered to be good</td>
+<td>H</td>
+<td>L</td>
+</tr>
+<tr>
+<td>Serviceability</td>
+<td>Modularity</td>
+<td>Backend, Frontend &amp; Database should be seperated at any given time. Sections should be kept structured to allow adding further Feature-Modules at a later point.</td>
+<td>M</td>
+<td>M</td>
+</tr>
+<tr>
+<td>Security</td>
+<td>User-Data-Encryption</td>
+<td>By hashing the password of a user immediately after recieving it in the backend, and only storing this hash guarantees the security of the password. The authentication of all user requests and their integrity is verified by using industry-standard JWT tokens.</td>
+<td>H</td>
+<td>H</td>
+</tr>
+</tbody>
+</table>
+<h3 id="311-licensing-requirements">3.11 Licensing Requirements</h3>
+<p>n/a</p>
+<h3 id="312-legal-copyright-and-other-notices">3.12 Legal, Copyright, and Other Notices</h3>
+<p>We do not take responsibility for any incorrect data or errors in the application.</p>
+<h3 id="313-applicable-standards">3.13 Applicable Standards</h3>
+<p>The development will follow the common clean code standards and naming conventions (see section <a href="#351-coding-standards">3.5.1 Coding standards</a>).</p>
+<h2 id="4-supporting-information">4. Supporting Information</h2>
+<p>For any further information you can contact the Green Sprout Team or check our <a href="https://github.com/green-sprout/blog/discussions">Green Sprout Blog</a><br />
+The Team Members are:<br />
+- Paula Kropfinger<br />
+- Valentin Wöhrle<br />
+- Jonas Schlösser<br />
+- Samuel Brekeller<br />
+- Safae Kartite</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2016 - 2024 Green Sprout
+    </div>
+  
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/green-sprout" target="_blank" rel="noopener" title="Link to our GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://github.com/green-sprout/blog/discussions" target="_blank" rel="noopener" title="Our Blog" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 3v18h18V3zm15 15H6v-1h12zm0-2H6v-1h12zm0-4H6V6h12z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.sections", "navigation.expand"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
